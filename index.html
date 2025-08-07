@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Like</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        ">
+        <div class="container-fluid">
+          <a class="container-fluid text-center navbar-brand" href="index.html"
+            >Social Like</a
+          >
+        </div>
+      </nav>
+    </header>
+    <section class="container mt-5">
+      <h1 class="ms-5 mb-4">Últimas publicaciones</h1>
+      <div class="row">
+        <!-- Columna izquierda (perfil) -->
+        <div class="col-md-3 mb-4">
+          <div class="card border border-black p-4 rounded-2">
+            <img
+              src="./assets/img/misato.webp"
+              class="card-img-top rounded-circle"
+              alt="Misato"
+              style="width: 150px; height: 150px; margin: 0 auto"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Misato</h5>
+              <a href="#" class="btn btn-primary">Mi perfil</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna derecha (publicaciones) -->
+        <div class="right-side col-md-8 mb-4">
+
+        
+          <div class="border border-black rounded-2 p-4 mb-3 bg-secondary-subtle">
+            <div class="row align-items-center">
+              <h3 class="col-md-3 mb-0">Rei</h3>
+              <div class="col-md-9 text-end">
+                <span class="me-3 like-counter rei-counter">0 like(s)</span>
+                <button onclick="likePost('rei')" class="btn btn-warning ">Like</button>
+              </div>
+            </div>
+            <p class="pt-2">
+              Acabo de configurar este nuevo <a href="#">bot de Discord</a>,
+              cuéntame que opinan ustedes.
+            </p>
+          </div>
+
+        
+          <div class="border border-black rounded-2 p-4 mb-3 bg-secondary-subtle">
+            <div class="row align-items-center">
+              <h3 class="col-md-3 mb-0">Asuka</h3>
+              <div class="col-md-9 text-end">
+                <span class="me-3 like-counter asuka-counter">0 like(s)</span>
+                <button onclick="likePost('asuka')" class="btn btn-warning ">Like</button>
+              </div>
+            </div>
+
+            <p class="pt-2">
+              Acabo de leer este <a href="#">nuevo comic</a>. Denle un vistazo.
+            </p>
+          </div>
+
+        
+          <div class="border border-black rounded-2 p-4 mb-3 bg-secondary-subtle">
+            <div class="row align-items-center">
+              <h3 class="col-md-3 mb-0">Shinji</h3>
+              <div class="col-md-9 text-end">
+                <span class="me-3 like-counter shinji-counter">0 like(s)</span>
+                <button onclick="likePost('shinji')" class="btn btn-warning ">Like</button>
+              </div>
+            </div>
+            <p class="pt-2">
+              No puedo dejar de escuchar <a href="#">este album</a>. ¿A quién más le gusta?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
